@@ -456,3 +456,136 @@ footer .container-grid{
 .icones-redes a:hover{
    color: var(--verde);
 }
+
+/* ------------------ menu hamburguer -------------------- */
+.menu-fechado{
+   display: none;
+}
+
+#icones-barras,
+#icone-x{
+   display: none;
+}
+
+/* ------------------------RESPONSIVIDADE------------------ */
+@media screen and (max-widht: 1024px){
+   .titulo,
+   .titulo h2{
+      font-size: 22px;
+      font-family: "Recursive", sans-linear;
+   }
+
+   .titulo span{
+      line-height: 45px;
+   }
+
+   .menu{
+      justify-content: space-evenly
+   }
+
+   #sobre p{
+      font-size: 16px;
+   }
+
+   #servicos .card svg{
+      height: 55px;
+   }
+}
+
+@media screen and (max-width: 768px){
+   header {
+      position: relative;
+   }
+
+   header button{
+      width:50px;
+      background: none;
+      border: none;
+
+      cursor: pointer;
+      display: unset  ;
+   }
+
+   header svg{
+      fill: var(--branco)
+   }
+
+   nav.menu {
+      height: 500px;
+      width: 350px;
+
+      padding: 0px 30px;
+
+      background-color: var(--preto);
+
+      flex-direction: column;
+      justify-content: space-around;
+
+      position: absolute;
+      top: 165px;
+      right: 0px;
+
+      z-index: 1;
+   }
+   
+.conteudo-banner img{
+   display: none;
+}
+
+.conteudo-banner{
+   justify-content: center;
+}
+
+#sobre img{
+   display: none;
+}
+
+.titulo{
+   justify-content: center;
+}
+
+#cases img{
+   height: 200px;
+}
+
+footer .roda-pe{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+footer img{
+   height: 80px;
+}
+
+.redes-sociais{
+   align-items: center;
+   justify-content: center;
+}
+
+.redes-sociais svg{
+   height: 35px;
+}
+
+}
+
+@media screen and (max-width: 320px){
+   nav.menu{
+    width: 260px;
+   }
+
+   header img{
+      width: 185px;
+   }
+
+   .conteudo-banner p{
+      font-size: 24px;
+      width: 310px;
+   }
+
+   .conteudo-banner ul{
+      font-size: 25px;
+   }
+}
